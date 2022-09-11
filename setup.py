@@ -18,22 +18,22 @@ plugin_version = "0.1.4"
 
 # The plugin's description. Can be overwritten within OctoPrint's internal data via __plugin_description__ in the plugin
 # module
-plugin_description = """A simple plugin, that add's a button to the navbar, toggleing GPIO on the RPi. It can be used for turning on and off a light."""
+plugin_description = """A simple plugin, that add's a button to the navbar, toggleing cmd on the RPi. It can be used for turning on and off a light."""
 
 # The plugin's author. Can be overwritten within OctoPrint's internal data via __plugin_author__ in the plugin module
-plugin_author = "Žiga Kralj"
+plugin_author = "dominoxp"
 
 # The plugin's author's mail address.
-plugin_author_email = "public@zigakralj.com"
+plugin_author_email = "dominoxp@ntn.wtf"
 
 # The plugin's homepage URL. Can be overwritten within OctoPrint's internal data via __plugin_url__ in the plugin module
-plugin_url = "https://github.com/gigibu5/OctoLight"
+plugin_url = "https://github.com/dominoxp/OctoLight"
 
 # The plugin's license. Can be overwritten within OctoPrint's internal data via __plugin_license__ in the plugin module
 plugin_license = "AGPLv3"
 
 # Any additional requirements besides OctoPrint should be listed here
-plugin_requires = ["RPi.GPIO"]
+plugin_requires = []
 
 ### --------------------------------------------------------------------------------------------------------------------
 ### More advanced options that you usually shouldn't have to touch follow after this point

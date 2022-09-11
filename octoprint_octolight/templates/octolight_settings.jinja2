@@ -1,17 +1,22 @@
 <form class="form-horizontal">
 	<h3>OctoLight settings</h3>
 	<div class="control-group">
-		<label class="control-label">{{ _('Light PIN') }}</label>
+		<label class="control-label">{{ _('Light On Command') }}</label>
 		<div class="controls">
-			<input id="light_pin-input" type="number" min="1" max="40" class="input-small"
-				data-bind="value: settings.plugins.octolight.light_pin">
+			<input id="on_command-input" type="text" min="1" max="40" class="input-small"
+				data-bind="value: settings.plugins.octolight.on_command">
+        </div>
+        <label class="control-label">{{ _('Light Off Command') }}</label>
+		<div>
+    		<div class="controls">
+			<input id="off_command-input" type="text" class="input-small"
+				data-bind="value: settings.plugins.octolight.off_command">
 		</div>
-
-		<div class="controls">
-			<label class="checkbox">
-				<input type="checkbox" data-bind="checked: settings.plugins.octolight.inverted_output">
-				{{ _('Inverted output') }}
-			</label>
+        <label class="control-label">{{ _('Light Status Command') }}</label>
+        <div>
+    		<div class="controls">
+			<input id="status_command-input" type="text" class="input-small"
+				data-bind="value: settings.plugins.octolight.status_command">
 		</div>
 
 		<label class="control-label">{{ _('Delay Light Off (mins)') }}</label>
