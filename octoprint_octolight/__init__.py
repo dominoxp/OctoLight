@@ -237,7 +237,7 @@ class OctoLightPlugin(
 
 	def get_light_state(self):
 		# Get current light statue of command
-		p = subprocess.Popen(self._settings.get("status_command"), shell=True)
+		p = subprocess.Popen(self._settings.get(["status_command"]), shell=True)
 
 		for _ in range(600):
 			if p.poll() is None:
@@ -250,10 +250,10 @@ class OctoLightPlugin(
 	def change_light_state(self, value):
 		# Set current light statue of command
 		if value:
-			p = subprocess.Popen(self._settings.get("on_command"), shell=True)
+			p = subprocess.Popen(self._settings.get(["on_command"]), shell=True)
 		else:
 			self.stopTimer()
-			p = subprocess.Popen(self._settings.get("off_command"), shell=True)
+			p = subprocess.Popen(self._settings.get(["off_command"]), shell=True)
 
 		for _ in range(600):
 			if p.poll() is None:
